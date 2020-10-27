@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Autocreate\Handlers;
+namespace Detrena\BitrixMigrations\Autocreate\Handlers;
 
-use Arrilot\BitrixMigrations\Exceptions\StopHandlerException;
+use Detrena\BitrixMigrations\Exceptions\StopHandlerException;
 
 class OnBeforeGroupUpdate extends BaseHandler implements HandlerInterface
 {

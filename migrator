@@ -1,17 +1,17 @@
 #!/usr/bin/env php
 <?php
 
-use Arrilot\BitrixMigrations\Commands\ArchiveCommand;
-use Arrilot\BitrixMigrations\Commands\MakeCommand;
-use Arrilot\BitrixMigrations\Commands\InstallCommand;
-use Arrilot\BitrixMigrations\Commands\MigrateCommand;
-use Arrilot\BitrixMigrations\Commands\RollbackCommand;
-use Arrilot\BitrixMigrations\Commands\TemplatesCommand;
-use Arrilot\BitrixMigrations\Commands\StatusCommand;
-use Arrilot\BitrixMigrations\Constructors\IBlock;
-use Arrilot\BitrixMigrations\Migrator;
-use Arrilot\BitrixMigrations\Storages\BitrixDatabaseStorage;
-use Arrilot\BitrixMigrations\TemplatesCollection;
+use Detrena\BitrixMigrations\Commands\ArchiveCommand;
+use Detrena\BitrixMigrations\Commands\MakeCommand;
+use Detrena\BitrixMigrations\Commands\InstallCommand;
+use Detrena\BitrixMigrations\Commands\MigrateCommand;
+use Detrena\BitrixMigrations\Commands\RollbackCommand;
+use Detrena\BitrixMigrations\Commands\TemplatesCommand;
+use Detrena\BitrixMigrations\Commands\StatusCommand;
+use Detrena\BitrixMigrations\Constructors\IBlock;
+use Detrena\BitrixMigrations\Migrator;
+use Detrena\BitrixMigrations\Storages\BitrixDatabaseStorage;
+use Detrena\BitrixMigrations\TemplatesCollection;
 use Symfony\Component\Console\Application;
 
 define("NOT_CHECK_PERMISSIONS", true);

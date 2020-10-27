@@ -1,9 +1,9 @@
 <?php
 
-namespace Arrilot\Tests\BitrixMigrations;
+namespace Detrena\Tests\BitrixMigrations;
 
-use Arrilot\BitrixMigrations\Migrator;
-use Arrilot\BitrixMigrations\TemplatesCollection;
+use Detrena\BitrixMigrations\Migrator;
+use Detrena\BitrixMigrations\TemplatesCollection;
 use Mockery as m;
 
 class MigratorTest extends CommandTestCase
@@ -51,7 +51,7 @@ class MigratorTest extends CommandTestCase
      */
     protected function mockDatabase()
     {
-        return m::mock('Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface');
+        return m::mock('Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface');
     }
 
     /**
@@ -59,6 +59,6 @@ class MigratorTest extends CommandTestCase
      */
     protected function mockFiles()
     {
-        return m::mock('Arrilot\BitrixMigrations\Interfaces\FileStorageInterface');
+        return m::mock('Detrena\BitrixMigrations\Interfaces\FileStorageInterface');
     }
 }

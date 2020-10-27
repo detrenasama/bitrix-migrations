@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Interfaces;
+namespace Detrena\BitrixMigrations\Interfaces;
 
 interface DatabaseStorageInterface
 {

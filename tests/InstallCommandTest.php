@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\Tests\BitrixMigrations;
+namespace Detrena\Tests\BitrixMigrations;
 
 use Mockery as m;
 
@@ -8,13 +8,13 @@ class InstallCommandTest extends CommandTestCase
 {
     protected function mockCommand($database)
     {
-        return m::mock('Arrilot\BitrixMigrations\Commands\InstallCommand[abort]', ['migrations', $database])
+        return m::mock('Detrena\BitrixMigrations\Commands\InstallCommand[abort]', ['migrations', $database])
             ->shouldAllowMockingProtectedMethods();
     }
 
     public function testItCreatesMigrationTable()
     {
-        $database = m::mock('Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface');
+        $database = m::mock('Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface');
         $database->shouldReceive('checkMigrationTableExistence')->once()->andReturn(false);
         $database->shouldReceive('createMigrationTable')->once();
 
@@ -25,7 +25,7 @@ class InstallCommandTest extends CommandTestCase
 
     public function testItDoesNotCreateATableIfItExists()
     {
-        $database = m::mock('Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface');
+        $database = m::mock('Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface');
         $database->shouldReceive('checkMigrationTableExistence')->once()->andReturn(true);
         $database->shouldReceive('createMigrationTable')->never();
 

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Arrilot\BitrixMigrations\Constructors;
+namespace Detrena\BitrixMigrations\Constructors;
 
 
-use Arrilot\BitrixMigrations\Logger;
+use Detrena\BitrixMigrations\Logger;
 use Bitrix\Main\Application;
 
 class IBlockPropertyEnum

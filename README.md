@@ -167,7 +167,7 @@
 Для его включения необходимо добавить примерно следующее в `init.php`
 
 ```php
-Arrilot\BitrixMigrations\Autocreate\Manager::init($_SERVER["DOCUMENT_ROOT"].'/migrations');
+Detrena\BitrixMigrations\Autocreate\Manager::init($_SERVER["DOCUMENT_ROOT"].'/migrations');
 ```
 
 В метод `Manager::init()` передается путь до директории аналогичной конфигу в файле `migrator`.
@@ -262,7 +262,7 @@ Arrilot\BitrixMigrations\Autocreate\Manager::init($_SERVER["DOCUMENT_ROOT"].'/mi
 
 1) Заменить подключение ядра Битрикса на ядро другой системы.
 
-2) Реализовать свой аналог ` Arrilot\BitrixMigrations\Repositories\BitrixDatabaseRepository;` и использовать его.
+2) Реализовать свой аналог ` Detrena\BitrixMigrations\Repositories\BitrixDatabaseRepository;` и использовать его.
 
 3) По желанию отключить существующие шаблоны миграций, сделав свои.
 

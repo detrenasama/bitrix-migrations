@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\Tests\BitrixMigrations;
+namespace Detrena\Tests\BitrixMigrations;
 
 use Mockery as m;
 
@@ -8,7 +8,7 @@ class RollbackCommandTest extends CommandTestCase
 {
     protected function mockCommand($migrator)
     {
-        $command = 'Arrilot\BitrixMigrations\Commands\RollbackCommand[abort, info, message, getMigrationObjectByFileName,markRolledBackWithConfirmation]';
+        $command = 'Detrena\BitrixMigrations\Commands\RollbackCommand[abort, info, message, getMigrationObjectByFileName,markRolledBackWithConfirmation]';
 
         return m::mock($command, [$migrator])->shouldAllowMockingProtectedMethods();
     }

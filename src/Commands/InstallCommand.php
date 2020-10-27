@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Commands;
+namespace Detrena\BitrixMigrations\Commands;
 
-use Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface;
+use Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface;
 
 class InstallCommand extends AbstractCommand
 {
