@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Commands;
+namespace Detrena\BitrixMigrations\Commands;
 
-use Arrilot\BitrixMigrations\Migrator;
+use Detrena\BitrixMigrations\Migrator;
 
 class StatusCommand extends AbstractCommand
 {

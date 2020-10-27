@@ -1,9 +1,9 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\BaseMigrations;
+namespace Detrena\BitrixMigrations\BaseMigrations;
 
-use Arrilot\BitrixMigrations\Exceptions\MigrationException;
-use Arrilot\BitrixMigrations\Interfaces\MigrationInterface;
+use Detrena\BitrixMigrations\Exceptions\MigrationException;
+use Detrena\BitrixMigrations\Interfaces\MigrationInterface;
 use Bitrix\Main\Application;
 use Bitrix\Main\DB\Connection;
 use CIBlock;

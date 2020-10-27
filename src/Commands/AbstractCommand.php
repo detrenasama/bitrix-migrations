@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Commands;
+namespace Detrena\BitrixMigrations\Commands;
 
 use DomainException;
 use Exception;

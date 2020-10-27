@@ -1,7 +1,7 @@
 <?php
 
-use Arrilot\BitrixMigrations\BaseMigrations\BitrixMigration;
-use Arrilot\BitrixMigrations\Exceptions\MigrationException;
+use Detrena\BitrixMigrations\BaseMigrations\BitrixMigration;
+use Detrena\BitrixMigrations\Exceptions\MigrationException;
 use Bitrix\Highloadblock\HighloadBlockTable;
 
 class __className__ extends BitrixMigration

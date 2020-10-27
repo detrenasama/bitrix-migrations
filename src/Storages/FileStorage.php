@@ -1,9 +1,9 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Storages;
+namespace Detrena\BitrixMigrations\Storages;
 
-use Arrilot\BitrixMigrations\Helpers;
-use Arrilot\BitrixMigrations\Interfaces\FileStorageInterface;
+use Detrena\BitrixMigrations\Helpers;
+use Detrena\BitrixMigrations\Interfaces\FileStorageInterface;
 use Exception;
 
 class FileStorage implements FileStorageInterface

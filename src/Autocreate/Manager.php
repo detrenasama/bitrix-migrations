@@ -1,12 +1,12 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Autocreate;
+namespace Detrena\BitrixMigrations\Autocreate;
 
-use Arrilot\BitrixMigrations\Autocreate\Handlers\HandlerInterface;
-use Arrilot\BitrixMigrations\Exceptions\SkipHandlerException;
-use Arrilot\BitrixMigrations\Exceptions\StopHandlerException;
-use Arrilot\BitrixMigrations\Migrator;
-use Arrilot\BitrixMigrations\TemplatesCollection;
+use Detrena\BitrixMigrations\Autocreate\Handlers\HandlerInterface;
+use Detrena\BitrixMigrations\Exceptions\SkipHandlerException;
+use Detrena\BitrixMigrations\Exceptions\StopHandlerException;
+use Detrena\BitrixMigrations\Migrator;
+use Detrena\BitrixMigrations\TemplatesCollection;
 use Bitrix\Main\Entity\EventResult;
 use Bitrix\Main\EventManager;
 

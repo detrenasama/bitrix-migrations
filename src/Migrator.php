@@ -1,15 +1,15 @@
 <?php
 
-namespace Arrilot\BitrixMigrations;
+namespace Detrena\BitrixMigrations;
 
-use Arrilot\BitrixIblockHelper\HLBlock;
-use Arrilot\BitrixIblockHelper\IblockId;
-use Arrilot\BitrixMigrations\Constructors\FieldConstructor;
-use Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface;
-use Arrilot\BitrixMigrations\Interfaces\FileStorageInterface;
-use Arrilot\BitrixMigrations\Interfaces\MigrationInterface;
-use Arrilot\BitrixMigrations\Storages\BitrixDatabaseStorage;
-use Arrilot\BitrixMigrations\Storages\FileStorage;
+use Detrena\BitrixIblockHelper\HLBlock;
+use Detrena\BitrixIblockHelper\IblockId;
+use Detrena\BitrixMigrations\Constructors\FieldConstructor;
+use Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface;
+use Detrena\BitrixMigrations\Interfaces\FileStorageInterface;
+use Detrena\BitrixMigrations\Interfaces\MigrationInterface;
+use Detrena\BitrixMigrations\Storages\BitrixDatabaseStorage;
+use Detrena\BitrixMigrations\Storages\FileStorage;
 use Bitrix\Main\Application;
 use Exception;
 
@@ -371,7 +371,7 @@ class Migrator
         $object = new $class();
 
         if (!$object instanceof MigrationInterface) {
-            throw new Exception("Migration class {$class} must implement Arrilot\\BitrixMigrations\\Interfaces\\MigrationInterface");
+            throw new Exception("Migration class {$class} must implement Detrena\\BitrixMigrations\\Interfaces\\MigrationInterface");
         }
 
         return $object;
@@ -407,20 +407,20 @@ class Migrator
     }
 
     /**
-     * If package arrilot/bitrix-iblock-helper is loaded then we should disable its caching to avoid problems.
+     * If package detrenasama/bitrix-iblock-helper is loaded then we should disable its caching to avoid problems.
      */
     private function disableBitrixIblockHelperCache()
     {
-        if (class_exists('\\Arrilot\\BitrixIblockHelper\\IblockId')) {
+        if (class_exists('\\Detrena\\BitrixIblockHelper\\IblockId')) {
             IblockId::setCacheTime(0);
-            if (method_exists('\\Arrilot\\BitrixIblockHelper\\IblockId', 'flushLocalCache')) {
+            if (method_exists('\\Detrena\\BitrixIblockHelper\\IblockId', 'flushLocalCache')) {
                 IblockId::flushLocalCache();
             }
         }
 
-        if (class_exists('\\Arrilot\\BitrixIblockHelper\\HLBlock')) {
+        if (class_exists('\\Detrena\\BitrixIblockHelper\\HLBlock')) {
             HLBlock::setCacheTime(0);
-            if (method_exists('\\Arrilot\\BitrixIblockHelper\\HLBlock', 'flushLocalCache')) {
+            if (method_exists('\\Detrena\\BitrixIblockHelper\\HLBlock', 'flushLocalCache')) {
                 HLBlock::flushLocalCache();
             }
         }

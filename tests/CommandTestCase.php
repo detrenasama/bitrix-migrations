@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\Tests\BitrixMigrations;
+namespace Detrena\Tests\BitrixMigrations;
 
 use Mockery;
 use PHPUnit_Framework_TestCase;

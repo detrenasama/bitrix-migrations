@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Autocreate\Handlers;
+namespace Detrena\BitrixMigrations\Autocreate\Handlers;
 
-use Arrilot\BitrixMigrations\Exceptions\SkipHandlerException;
+use Detrena\BitrixMigrations\Exceptions\SkipHandlerException;
 
 class OnBeforeIBlockUpdate extends BaseHandler implements HandlerInterface
 {

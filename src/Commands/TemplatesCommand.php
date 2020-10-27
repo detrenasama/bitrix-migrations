@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Commands;
+namespace Detrena\BitrixMigrations\Commands;
 
-use Arrilot\BitrixMigrations\TemplatesCollection;
+use Detrena\BitrixMigrations\TemplatesCollection;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Helper\TableSeparator;
 

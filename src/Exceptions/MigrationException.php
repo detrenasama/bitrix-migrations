@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Exceptions;
+namespace Detrena\BitrixMigrations\Exceptions;
 
 use Exception;
 

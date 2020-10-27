@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\Tests\BitrixMigrations;
+namespace Detrena\Tests\BitrixMigrations;
 
 use Mockery as m;
 
@@ -8,14 +8,14 @@ class RollbackCommandTest extends CommandTestCase
 {
     protected function mockCommand($migrator)
     {
-        $command = 'Arrilot\BitrixMigrations\Commands\RollbackCommand[abort, info, message, getMigrationObjectByFileName,markRolledBackWithConfirmation]';
+        $command = 'Detrena\BitrixMigrations\Commands\RollbackCommand[abort, info, message, getMigrationObjectByFileName,markRolledBackWithConfirmation]';
 
         return m::mock($command, [$migrator])->shouldAllowMockingProtectedMethods();
     }
 
     public function testItRollbacksNothingIfThereIsNoMigrations()
     {
-        $migrator = m::mock('Arrilot\BitrixMigrations\Migrator');
+        $migrator = m::mock('Detrena\BitrixMigrations\Migrator');
         $migrator->shouldReceive('getRanMigrations')->once()->andReturn([]);
         $migrator->shouldReceive('rollbackMigration')->never();
         $migrator->shouldReceive('hardRollbackMigration')->never();
@@ -28,7 +28,7 @@ class RollbackCommandTest extends CommandTestCase
 
     public function testItRollsBackTheLastMigration()
     {
-        $migrator = m::mock('Arrilot\BitrixMigrations\Migrator');
+        $migrator = m::mock('Detrena\BitrixMigrations\Migrator');
         $migrator->shouldReceive('getRanMigrations')->once()->andReturn([
             '2014_11_26_162220_foo',
             '2015_11_26_162220_bar',
@@ -46,7 +46,7 @@ class RollbackCommandTest extends CommandTestCase
 
     public function testItRollbackNonExistingMigration()
     {
-        $migrator = m::mock('Arrilot\BitrixMigrations\Migrator');
+        $migrator = m::mock('Detrena\BitrixMigrations\Migrator');
         $migrator->shouldReceive('getRanMigrations')->once()->andReturn([
             '2014_11_26_162220_foo',
             '2015_11_26_162220_bar',

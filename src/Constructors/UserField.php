@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Arrilot\BitrixMigrations\Constructors;
+namespace Detrena\BitrixMigrations\Constructors;
 
 
-use Arrilot\BitrixMigrations\Helpers;
-use Arrilot\BitrixMigrations\Logger;
+use Detrena\BitrixMigrations\Helpers;
+use Detrena\BitrixMigrations\Logger;
 use Bitrix\Highloadblock\HighloadBlockTable;
 use Bitrix\Main\Application;
 

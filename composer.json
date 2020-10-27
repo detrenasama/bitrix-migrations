@@ -1,5 +1,5 @@
 {
-  "name": "arrilot/bitrix-migrations",
+  "name": "detrenasama/bitrix-migrations",
   "license": "MIT",
   "description": "Database migrations for Bitrix CMS",
   "keywords": [
@@ -12,7 +12,7 @@
       "email": "nekrasov.ilya90@gmail.com"
     }
   ],
-  "homepage": "https://github.com/Arrilot/bitrix-migrations",
+  "homepage": "https://github.com/detrenasama/bitrix-migrations",
   "require": {
     "php": ">=5.5.0",
     "symfony/console": "~2|~3|~4",
@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Arrilot\\BitrixMigrations\\": "src/"
+      "Detrena\\BitrixMigrations\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Arrilot\\Tests\\BitrixMigrations\\": "tests/"
+      "Detrena\\Tests\\BitrixMigrations\\": "tests/"
     }
   }
 }

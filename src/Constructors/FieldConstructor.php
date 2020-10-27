@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Arrilot\BitrixMigrations\Constructors;
+namespace Detrena\BitrixMigrations\Constructors;
 
 
 trait FieldConstructor

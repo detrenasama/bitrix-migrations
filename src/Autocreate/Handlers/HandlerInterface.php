@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Autocreate\Handlers;
+namespace Detrena\BitrixMigrations\Autocreate\Handlers;
 
 interface HandlerInterface
 {
