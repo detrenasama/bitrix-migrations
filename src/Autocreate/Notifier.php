@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Autocreate;
+namespace Detrena\BitrixMigrations\Autocreate;
 
 use CAdminNotify;
 
@@ -11,7 +11,7 @@ class Notifier
      *
      * @var string
      */
-    protected $tag = 'arrilot_new_migration';
+    protected $tag = 'detrenasama_new_migration';
 
     /**
      * Show notification that migration has been created.

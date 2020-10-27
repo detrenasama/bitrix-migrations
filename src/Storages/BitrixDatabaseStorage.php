@@ -1,8 +1,8 @@
 <?php
 
-namespace Arrilot\BitrixMigrations\Storages;
+namespace Detrena\BitrixMigrations\Storages;
 
-use Arrilot\BitrixMigrations\Interfaces\DatabaseStorageInterface;
+use Detrena\BitrixMigrations\Interfaces\DatabaseStorageInterface;
 use Bitrix\Main\Application;
 use CDatabase;
 

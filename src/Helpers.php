@@ -1,6 +1,6 @@
 <?php
 
-namespace Arrilot\BitrixMigrations;
+namespace Detrena\BitrixMigrations;
 
 use Bitrix\Main\Application;
 
