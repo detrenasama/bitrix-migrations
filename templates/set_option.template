@@ -1,0 +1,35 @@
+<?php
+
+use Detrena\BitrixMigrations\BaseMigrations\BitrixMigration;
+use Detrena\BitrixMigrations\Exceptions\MigrationException;
+
+class __className__ extends BitrixMigration
+{
+    /**
+     * Run the migration.
+     *
+     * @return mixed
+     * @throws MigrationException
+     */
+    public function up()
+    {
+        $fields = __fields__;
+
+        \Bitrix\Main\Config\Option::set($fields['moduleId'], $fields['name'], $fields['value'], $fields['siteId']);
+        \Bitrix\Main\Config\Option::set($fields['moduleId'], "#" . $fields['name'], $fields['value'], $fields['siteId']);
+    }
+
+    /**
+     * Reverse the migration.
+     *
+     * @return mixed
+     * @throws MigrationException
+     */
+    public function down()
+    {
+        $fields = __previous__;
+
+        \Bitrix\Main\Config\Option::set($fields['moduleId'], $fields['name'], $fields['value'], $fields['siteId']);
+        \Bitrix\Main\Config\Option::set($fields['moduleId'], "#" . $fields['name'], $fields['value'], $fields['siteId']);
+    }
+}
