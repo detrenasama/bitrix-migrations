@@ -116,6 +116,7 @@ class TemplatesCollection
             'add_group',
             'update_group',
             'delete_group',
+            'set_option',
         ];
 
         foreach ($templates as $template) {
