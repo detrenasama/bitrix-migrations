@@ -30,9 +30,6 @@ class OnAfterSetOption extends BaseHandler implements HandlerInterface
         if ((string)$this->fields['value'] === (string)$prev_value) {
 
             throw new SkipHandlerException("Same value");
-        } else {
-            error_log(var_export($this->fields['value'], true), 4);
-            error_log(var_export($prev_value, true), 4);
         }
 
         $this->previous = array(
