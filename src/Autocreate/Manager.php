@@ -44,6 +44,7 @@ class Manager
             'OnBeforeGroupAdd'       => 'OnBeforeGroupAdd',
             'OnBeforeGroupUpdate'    => 'OnBeforeGroupUpdate',
             'OnBeforeGroupDelete'    => 'OnBeforeGroupDelete',
+            'OnAfterSetOption'       => 'OnAfterSetOption',
         ],
         'highloadblock' => [
             '\\Bitrix\\Highloadblock\\Highloadblock::OnBeforeAdd'    => 'OnBeforeHLBlockAdd',
@@ -152,7 +153,6 @@ class Manager
                 $eventManager->addEventHandler($module, $event, [__CLASS__, $handler], false, 5000);
             }
         }
-
         $eventManager->addEventHandler('main', 'OnAfterEpilog', function () {
             $notifier = new Notifier();
             $notifier->deleteNotificationFromPreviousMigration();
